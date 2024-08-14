@@ -4,7 +4,12 @@
 .store {
   padding: 120px 0;
 
-  &__header {}
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
 
   &__categories {
     display: flex;
@@ -37,19 +42,47 @@
     }
   }
 
-  &__cart-button {}
+  &__cart-button {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+  }
 
-  &__title {}
+  &__cart-num {
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    color: $light;
+  }
 
-  // .store__list
+  &__cart-icon {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+  }
 
-  &__list {}
+  &__title {
+    font-weight: 700;
+    font-size: 52px;
+    color: $green;
+    margin-bottom: 32px;
+  }
 
-  // .store__item
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
+    justify-content: center;
+    gap: 20px;
 
-  &__item {}
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
 
-  // .store__product
-
-  &__product {}
+  &__item {
+    display: flex;
+  }
 }
