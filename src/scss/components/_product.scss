@@ -10,6 +10,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include tablet {
     min-height: 460px;
@@ -20,7 +21,6 @@
   }
 
   &__img {
-    width: 100%;
     margin-bottom: 16px;
   }
 
