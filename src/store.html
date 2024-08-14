@@ -56,7 +56,7 @@
             </ul>
 
             <button class="store__cart-button">
-              <span class="store__cart-num">3</span>
+              <span class="store__cart-num"></span>
               <svg class="store__cart-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="18" cy="14" r="2" fill="#E47537"/>
                 <circle cx="10" cy="14" r="2" fill="#E47537"/>
@@ -69,8 +69,7 @@
             Каталог
           </h2>
 
-          <ul class="store__list">
-          </ul>
+          <ul class="store__list"></ul>
         </div>
       </section>
 
@@ -140,6 +139,16 @@
         </address>
       </div>
     </footer>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modal__content">
+          <h2>Корзина</h2>
+          <ul class="modal__cart-list"></ul>
+        </div>
+      </div>
+      <button class="modal-overlay__close-button">x</button>
+    </div>
   </body>
 
 </html>
