@@ -143,8 +143,29 @@
     <div class="modal-overlay">
       <div class="modal">
         <div class="modal__content">
-          <h2>Корзина</h2>
-          <ul class="modal__cart-list"></ul>
+          <h2 class="modal__title">Корзина</h2>
+          <ul class="modal__cart-list">
+          </ul>
+
+          <form class="modal__cart-form" action="#">
+            <fieldset class="modal__cart-fieldset">
+              <legend class="modal__cart-legend">From shop</legend>
+              <label class="modal__radio radio">ул. Адамавая 45/1
+                <input type="radio" class="radio__input" name="store" value="ул. Адамавая 45/1" checked>
+                </label>
+              <label class="modal__radio radio">ул. Вишневая 74
+                <input type="radio" class="radio__input" name="store" value="ул. Вишневая 74">
+                </label>
+              <label class="modal__radio radio">ул. Чехова 106/28
+                <input type="radio" class="radio__input" name="store" value="ул. Чехова 106/28">
+                </label>
+            </fieldset>
+
+            <div class="modal__cart-total">
+              <button class="modal__cart-button">Order</button>
+              <p class="modal__cart-price">12900&nbsp;₽</p>
+            </div>
+          </form>
         </div>
       </div>
       <button class="modal-overlay__close-button">x</button>
