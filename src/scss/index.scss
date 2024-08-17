@@ -1,0 +1,13 @@
+@use "default" as *;
+@use "components/header" as *;
+@use "components/hero" as *;
+@use "components/about" as *;
+@use "components/advantages" as *;
+@use "components/subscribe" as *;
+@use "components/store" as *;
+@use "components/product" as *;
+@use "components/footer" as *;
+@use "components/modal" as *;
+@use "components/order-message" as *;
+
+@import "normalize.css";
