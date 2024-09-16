@@ -4,6 +4,8 @@
 
 ## About poject ##
 
+![Screen ](public/screen.png)
+
 PetShop is a modern online store offering users a convenient interface for selecting and ordering pet products. The project is built using SCSS for styling and JavaScript (ES6+) for creating interactive features.
 
 Key Features:
@@ -13,6 +15,12 @@ Key Features:
 🔸️Dynamic generation of menus, product lists, item cards, and shopping cart via JavaScript, based on data retrieved from an API;
 🔸️Ability to add items to the cart and arrange delivery to the nearest store.
 The project uses Vite and npm packages for building and optimization, ensuring fast load times and efficient development processes.
+
+***************************
+
+## Deploy ##
+
+* [https://petplanet-omega.vercel.app](https://petplanet-omega.vercel.app)
 
 ***************************
 
