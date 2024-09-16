@@ -60,5 +60,16 @@
     font-size: 24px;
     text-align: center;
     color: $light;
+    @extend %btn-placeholder;
   }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
 }

@@ -79,11 +79,12 @@
 
   &__item {
     margin-bottom: 3px;
-
+    @extend %link-placeholder;
     &:last-child {
       margin-bottom: 0;
     }
   }
+
 
   &__contacts {
     grid-area: contacts;
@@ -99,6 +100,7 @@
   &__email {
     display: inline-block;
     margin-bottom: 16px;
+    @extend %link-placeholder;
   }
 
   &__social-list {

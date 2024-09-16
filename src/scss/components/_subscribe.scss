@@ -80,6 +80,7 @@
     justify-content: center;
     gap: 4px;
     min-width: 209px;
+    @extend %btn-placeholder;
 
     @include mobile {
       padding: 0;
