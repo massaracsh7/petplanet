@@ -37,16 +37,16 @@
 
   &_store {
     background-color: $green;
-      background-image: url("/img/bg-cat.png"), url("/img/pattern.svg");
-      background-size: 839px, auto;
+    background-image: url("/img/bg-cat.png"), url("/img/pattern.svg");
+    background-size: 839px, auto;
 
-      @include laptop {
-        background-size: 639px, auto;
-      } 
+    @include laptop {
+      background-size: 639px, auto;
+    }
 
-      @include tablet {
-        background-size: 100%, auto;
-      }
+    @include tablet {
+      background-size: 100%, auto;
+    }
   }
 
   &__title {
@@ -98,17 +98,7 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 
-    &:hover {
-      background-color: #00772f;
-    }
-
-    &:focus-visible {
-      outline-color: $carrot;
-    }
-
-    &:active {
-      transform: scale(0.9);
-    }
+    @extend %btn-placeholder;
 
     &::after {
       content: "";

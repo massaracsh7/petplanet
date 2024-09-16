@@ -3,3 +3,31 @@ $purple: #a346cf;
 $carrot: #e47537;
 $green: #008234;
 $white: #ffffff;
+
+%btn-placeholder {
+  transition: color 0.2s ease, background-color 0.2s ease;
+
+  &:hover {
+    background-color: lighten(#e47537, 10%);
+    color: #fff;
+  }
+
+  &:active {
+    background-color: darken(#e47537, 10%);
+  }
+}
+
+%link-placeholder {
+  transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    color: lighten(#008234, 10%);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transform: translateY(0);
+  }
+}
