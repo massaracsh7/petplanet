@@ -1,12 +1,29 @@
 import { API_URL } from './constants.js';
 import { productList } from './selectors.js';
 
+const wakeUpAPI = async () => {
+  let attempt = 0;
+  while (attempt < 10) {
+    try {
+      await fetch('https://pet-planet-api.onrender.com/api/products');
+      console.log('Ok, API is awake');
+      return;
+    } catch (error) {
+      attempt++;
+      console.error(`Loading..., API is not awake`);
+      await new Promise(resolve => setTimeout(resolve, 2000));
+    }
+  }
+  window.location.reload();
+};
+
+
 export const fetchProductByCategory = async (category) => {
+  await wakeUpAPI();
   try {
     const loader = document.createElement('div');
     loader.classList.add('loader');
     loader.textContent = 'Загрузка товаров...';
-
     productList.textContent = '';
     productList.appendChild(loader);
 
